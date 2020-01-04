@@ -13,7 +13,7 @@
                     <div class="col-xs-4 col-sm-4 col-md-4">
                         <div class="form-group">
                             <strong>Date:</strong>                                  
-                            <input id="date" type="date" name="date">
+                            <input id="date" type="date" name="date" class="form-control">
                         </div>
                     </div>
                     <div class="col-xs-4 col-sm-4 col-md-4">
@@ -28,15 +28,15 @@
                     </div>             
                     <div class="col-xs-4 col-sm-4 col-md-4">
                         <div class="form-group">
-                            <strong>User:</strong>
-                            <input type="text" name="user" id="user">
+                            <strong>Author:</strong>
+                            <input type="text" name="user" id="user" placeholder="author name" class="form-control">
                         </div>
                     </div>
                 </div>
                 <div class="row">   
                     <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group">
-                            <input id="submit_btn" type="button" class="btn btn-primary" value="search">
+                            <input id="submit_btn" type="button" class="btn btn-primary" value="Search">
                         </div>
                     </div>
                 </div>
