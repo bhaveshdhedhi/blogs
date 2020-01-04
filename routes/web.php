@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::group(['middleware' => 'auth'], function() {
+	Route::resource('blog', 'BlogController')->only([
+    'index', 'create','store'
+	]);
+
+	Route::get('/indexajax', 'BlogController@indexAjax')->name('indexajax');
+});
